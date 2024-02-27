@@ -29,12 +29,63 @@ html {
 
 .container {
     margin: 30px;
-    width: 200px;
+    width: 320px;
 }
 
 .container h1 {
     font-family: 'Montserrat', sans-serif;
     animation: changeinvert 5s infinite alternate;
+}
+
+.container .add-container {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+}
+
+#add-item {
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 3px;
+    border: 3px solid;
+    border-color: #fff;
+    border-radius: 10px;
+    background-color: #fff;
+    width: 100%;
+}
+
+#add-item:focus {
+    outline: none;
+    border: 3px solid #d5a4bd;
+}
+
+.add-button {
+    color: #d5a4bd;
+    font-weight: 800;
+    font-size: 25px;
+    width: 30px;
+    text-align: center;
+    background-color: transparent;
+    border: transparent;
+    height: 50%;
+    padding-left: 3px;
+    padding-right: 3px;
+    margin-left: 3px;
+}
+
+.add-button:hover {
+    background-color: #d5a4bd;
+    color: #282b3a;
+    border-radius: 10px;
+}
+
+.container #add-item {
+    font-family: 'Montserrat', sans-serif;
+    color: #40455e;
+    padding: 5px;
 }
 
 .container ul {
