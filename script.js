@@ -28,6 +28,11 @@ doList.addEventListener("click", function(e) {
         e.target.classList.toggle("checked");
         if (e.target.classList.contains("checked")) {
             doneList.appendChild(e.target); 
+            /*
+            let span = document.createElement("span");
+            span.innerHTML = "\u00d7";
+            e.target.appendChild(span);
+            */
         }
     }
 })

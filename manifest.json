@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "// doToDone",
-    "description": "A simple, cute to-do list",
+    "description": "A simplistic and navigable to-do list designed for minimalists. Keep track of your tasks and take them from \"do\" to \"done\".",
     "version": "1.0",
     "action": {
       "default_popup": "index.html",
