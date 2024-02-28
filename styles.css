@@ -62,7 +62,7 @@ html {
     border: 3px solid #d5a4bd;
 }
 
-.add-button {
+#add-button {
     color: #d5a4bd;
     font-weight: 800;
     font-size: 25px;
@@ -74,12 +74,23 @@ html {
     padding-left: 3px;
     padding-right: 3px;
     margin-left: 3px;
+    cursor: pointer;
 }
 
-.add-button:hover {
-    background-color: #d5a4bd;
-    color: #282b3a;
+@keyframes fadein {
+    0% {
+        background-color: #282b3a;
+        color: #d5a4bd;
+    }
+    100% {
+        background-color: #d5a4bd;
+        color: #282b3a;
+    }
+}
+
+#add-button:hover {
     border-radius: 10px;
+    animation: fadein .5s forwards;
 }
 
 .container #add-item {
@@ -88,17 +99,56 @@ html {
     padding: 5px;
 }
 
+#alert-message {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    padding: 10px;
+    padding-left: 14%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    border: 3px solid;
+    border-color: #da4f3f;
+    border-radius: 10px;
+    background-color: #da4f3f;
+    display: none;
+}
+
 .container ul {
     font-family: 'Montserrat', sans-serif;
     color: #ffffff;
+    font-weight: 500;
 }
 
 .container ul li {
     padding: 10px;
+    padding-left: 14%;
     margin-top: 20px;
     margin-bottom: 20px;
     border: 3px solid;
     border-color: #40455e;
     border-radius: 10px;
     background-color: #40455e;
+    position: relative;
+    cursor: pointer;
+}
+
+.container ul li::before {
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-image: url(./images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 25%;
+    left: 8px;
+}
+
+.container .checked {
+    text-decoration: line-through;
+}
+
+.container .checked::before {
+    background-image: url(./images/checked.png);
 }
