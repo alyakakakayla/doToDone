@@ -32,12 +32,46 @@ html {
     width: 320px;
 }
 
+.container .header-tabs #show-do {
+    padding: 0 10px;
+    font-size: 15px;
+    font-weight: 700;
+    float: right;
+    font-family: 'Montserrat', sans-serif;
+    color: #d5a4bd;
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+}
+
+.container .header-tabs #show-done {
+    padding: 0 10px;
+    font-size: 15px;
+    font-weight: 700;
+    float: right;
+    font-family: 'Montserrat', sans-serif;
+    color: #d5a4bd;
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+}
+
+.container .header-tabs #show-do:hover {
+    border-radius: 10px;
+    animation: fadein .5s forwards;
+}
+
+.container .header-tabs #show-done:hover {
+    border-radius: 10px;
+    animation: fadein .5s forwards;
+}
+
 .container h1 {
     font-family: 'Montserrat', sans-serif;
     animation: changeinvert 5s infinite alternate;
 }
 
-.container .add-container {
+#add-container {
     margin-top: 5px;
     margin-bottom: 5px;
     text-align: center;
@@ -103,7 +137,20 @@ html {
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     padding: 10px;
-    padding-left: 14%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    border: 3px solid;
+    border-color: #da4f3f;
+    border-radius: 10px;
+    background-color: #da4f3f;
+    display: none;
+}
+
+#alert-delete {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    padding: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
     color: #ffffff;
@@ -133,6 +180,11 @@ html {
     cursor: pointer;
 }
 
+.container ul li:hover {
+    border-color: #5b6180;
+    background-color: #5b6180;
+}
+
 .container ul li::before {
     content: '';
     position: absolute;
@@ -147,6 +199,7 @@ html {
 
 .container .checked {
     text-decoration: line-through;
+    /* display: none; */
 }
 
 .container .checked::before {

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>// doToDone</title>
+    <link rel="icon" href="./images/doToDoneLogo.png">
     <link rel="stylesheet" href="styles.css">
 
     <!--chivo mono import-->
@@ -23,8 +24,12 @@
 </head>
 <body>
     <div class="container">
+        <div class="header-tabs">
+            <button id="show-do">Do</button>
+            <button id="show-done">Done</button>
+        </div>
         <h1>// doToDone</h1>
-        <div class="add-container">
+        <div id="add-container">
             <input type="text" id="add-item" placeholder="Add item">
             <!-- <button class="add-button" onclick="addItem()">+</button> -->
             <button id="add-button">+</button>
@@ -32,11 +37,16 @@
         <div id="alert-message">
             Please add an item!
         </div>
+        <div id="alert-delete">
+            Are you sure you want to delete this item?
+        </div>
         <div class="list"> 
             <ul id="task-list">
-                <li class="checked">Call mom and dad</li>
                 <li>Make a cup of coffee</li>
                 <li>Check email inbox</li>
+            </ul>
+            <ul id="finished-list">
+                <li class="checked">Call mom and dad</li>
             </ul>
         </div>
     </div>
