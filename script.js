@@ -42,8 +42,8 @@ function addItem() {
         document.getElementById('alert-message').style.display="block";
         input.value = '';
     } else {
-        if (input.value.length > 30) {
-            let newInput = input.value.slice(0, 30);
+        if (input.value.length > 67) {
+            let newInput = input.value.slice(0, 67);
             let li = document.createElement("li");
             li.innerHTML = newInput + "...";
             doList.appendChild(li);

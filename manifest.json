@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "// doToDone",
-    "description": "A simplistic and navigable to-do list designed for minimalists. The easiest way to take your tasks from \"do\" to \"done\".",
+    "description": "A simplistic and navigable to-do list designed for minimalists. Pet project made with HTML, CSS, JavaScript and the Chrome extension API.",
     "version": "1.0",
     "action": {
       "default_popup": "index.html",

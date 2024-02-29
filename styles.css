@@ -282,6 +282,7 @@ html {
     background-color: #40455e;
     position: relative;
     cursor: pointer;
+    word-wrap: break-word;
 }
 
 .container ul li:hover {
