@@ -295,7 +295,7 @@ html {
     position: absolute;
     height: 20px;
     width: 20px;
-    background-image: url(./images/unchecked.png);
+    background-image: url(./images/unchecked2.png);
     background-size: cover;
     background-position: center;
     top: 25%;
@@ -308,5 +308,18 @@ html {
 }
 
 .container .checked::before {
-    background-image: url(./images/checked.png);
+    background-image: url(./images/checked2.png);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+::-webkit-scrollbar-track {
+    background: #40455e;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #d5a4bd;
+    border-radius: 10px;
 }
