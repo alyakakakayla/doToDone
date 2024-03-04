@@ -1,6 +1,6 @@
-var input = document.getElementById('add-item');
-var doList = document.getElementById('task-list');
-var doneList = document.getElementById('finished-list');
+let input = document.getElementById('add-item');
+let doList = document.getElementById('task-list');
+let doneList = document.getElementById('finished-list');
 const listItem = document.querySelector('li');
 
 //document getelementbyclass 'checked' style display none
@@ -12,6 +12,7 @@ document.getElementById("add-button").addEventListener("click", addItem); //no i
 document.getElementById('delete-all').addEventListener("click", deleteAll);
 document.getElementById('confirm').addEventListener("click", confirmClear);
 document.getElementById('deny').addEventListener("click", denyClear);
+//document.getElementById('bottom-fade').style.display="none";
 
 function confirmClear() {
     document.getElementById('alert-delete').style.display="none";
@@ -42,18 +43,23 @@ function addItem() {
         document.getElementById('alert-message').style.display="block";
         input.value = '';
     } else {
-        if (input.value.length > 67) {
-            let newInput = input.value.slice(0, 67);
+        if (input.value.length > 66) {
+            let newInput = input.value.slice(0, 66);
             let li = document.createElement("li");
+            li.draggable = true;
             li.innerHTML = newInput + "...";
             doList.appendChild(li);
-            input.value = '';
+            let span = document.createElement("span");
+            li.appendChild(span);
         } else {
             let li = document.createElement("li");
+            li.draggable = true;
             li.innerHTML = input.value;
             doList.appendChild(li);
-            input.value = '';
+            let span = document.createElement("span");
+            li.appendChild(span);
         }
+        input.value = '';
         if (document.getElementById('alert-message').style.display="block") {
             document.getElementById('alert-message').style.display="none";
         }
